@@ -1,0 +1,62 @@
+
+.footer{
+    margin-left: 130px;
+    margin-bottom: 50px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around; /* Even spacing */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    border-top: 2px solid #ffd700; /* Gold border on top */
+  }
+  
+  .footer-contact p {
+    flex: 1;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Glassmorphism effect */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .footer-contact p:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .footer-contact a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive for Mobile View */
+@media (max-width: 768px) {
+    .footer{
+        margin: 30px;
+        
+    }
+    .footer-contact {
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Reduce spacing */
+      text-align: center;
+    }
+  
+    .footer-contact p {
+      width: 90%; /* Make it take most of the width */
+      min-width: unset; /* Remove minimum width restriction */
+    }
+  }
